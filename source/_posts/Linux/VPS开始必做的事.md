@@ -9,52 +9,52 @@ categories:
 # ssh安全设置
 ## 账户设置
 添加新账户
-```
+```bash
 useradd tawawa -m -G sudo
 ```
 设置密码
-```
+```bash
 passwd tawawa
 ```
 如果每次`sudo`后输入密码麻烦可以用`visudo`命令修改`sudoers`文件
-```
+```bash
 # 默认nano，如果不行可以修改默认编辑器
 sudo update-alternatives --config editor
 
 visudo
 ```
 然后在后面的`ALL`添加`NOPASSWD:`
-```
+```bash
 %sudo   ALL=(ALL:ALL) NOPASSWD: ALL
 ```
 ## SSH文件配置
-```
+```bash
 sudo vim /etc/ssh/sshd_config
 ```
 修改默认端口(默认22)
-```
+```bash
 #Port 22
 Port 3333 
 ```
 禁止Root用户登录
-```
+```bash
 PermitRootLogin no
 ```
 ssh公钥登录
-```
+```bash
 PubkeyAuthentication yes
 AuthorizedKeysFile .ssh/authorized_keys  #公钥文件
 ```
 上传本地公钥
-```
+```bash
 ssh user@host 'mkdir -p .ssh && cat >> .ssh/authorized_keys' < ~/.ssh/id_rsa.pub
 ```
 重启SSH
-```
+```bash
 sudo systemctl restart sshd.service
 ```
 本地SSH配置文件
-```
+```bash
 Host server-alias # ssh登录设置的主机别名
 HostName ip_addr # 服务器ip地址
 Port port # ssh端口
@@ -72,11 +72,11 @@ PreferredAuthentications publickey
 * PreferredAuthentications 强制使用Public Key验证  
 
 退出主机可尝试用配置文件登录
-```
+```bash
 ssh 用户名@别名
 ```
 登录成功后可以取消密码登录
-```
+```bash
 sudo vim /etc/ssh/sshd_config   #打开配置文件
 PasswordAuthentication no     #找到PasswordAuthentication改成no
 sudo systemctl restart sshd.service   #重启ssh服务

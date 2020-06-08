@@ -15,7 +15,7 @@ customize:
         avatar: # css/images/avatar.png
         gravatar: i@tawawa.moe # Gravatar email address, if you enable Gravatar, your avatar config will be overriden
         author: geekaven
-        author_title: Web Developer
+        author_title: Web Developer & Anime Fans 
         location: ShangHai, China
         follow: https://github.com/geekaven/
     highlight: monokai
