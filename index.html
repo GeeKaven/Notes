@@ -147,6 +147,8 @@ Error message and password prompt
 
 <li>$:/core</li>
 
+<li>$:/core/modules/parsers/wikiparser/rules/wikilink.js</li>
+
 <li>$:/DefaultTiddlers</li>
 
 <li>$:/GitHub/Filename</li>
@@ -175,7 +177,11 @@ Error message and password prompt
 
 <li>$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/highlight</li>
 
+<li>$:/state/plugin-info-334910430-$:/core---1812962263</li>
+
 <li>$:/state/sidebar</li>
+
+<li>$:/state/tab--1498284803</li>
 
 <li>$:/state/tab--1963855381</li>
 
@@ -194,6 +200,8 @@ Error message and password prompt
 <li>$:/status/RequireReloadDueToPluginChange</li>
 
 <li>$:/StoryList</li>
+
+<li>$:/temp/advancedsearch</li>
 
 <li>$:/temp/HidePluginWarning</li>
 
@@ -398,6 +406,8 @@ Error message and password prompt
 <li>$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.22/index.html/$:/themes/tiddlywiki/vanilla</li>
 
 <li>$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary</li>
+
+<li>$:/temp/search</li>
 
 <li>$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html</li>
 
@@ -9806,6 +9816,75 @@ Error message and password prompt
     }
 }</pre>
 </div>
+<div created="20200609113011331" modified="20200609113025515" module-type="wikirule" title="$:/core/modules/parsers/wikiparser/rules/wikilink.js" type="application/javascript">
+<pre>/*\
+title: $:/core/modules/parsers/wikiparser/rules/wikilink.js
+type: application/javascript
+module-type: wikirule
+
+Wiki text inline rule for wiki links. For example:
+
+```
+AWikiLink
+AnotherLink
+~SuppressedLink
+```
+
+Precede a camel case word with `~` to prevent it from being recognised as a link.
+
+\*/
+(function(){
+
+/*jslint node: true, browser: true */
+/*global $tw: false */
+&quot;use strict&quot;;
+
+exports.name = &quot;wikilink&quot;;
+exports.types = {inline: true};
+
+exports.init = function(parser) {
+	this.parser = parser;
+	// Regexp to match
+	this.matchRegExp = new RegExp($tw.config.textPrimitives.unWikiLink + &quot;?&quot; + $tw.config.textPrimitives.wikiLink,&quot;mg&quot;);
+};
+
+/*
+Parse the most recent match
+*/
+exports.parse = function() {
+	// Get the details of the match
+	var linkText = this.match[0];
+	// Move past the macro call
+	this.parser.pos = this.matchRegExp.lastIndex;
+	// If the link starts with the unwikilink character then just output it as plain text
+	if(linkText.substr(0,1) === $tw.config.textPrimitives.unWikiLink) {
+		return [{type: &quot;text&quot;, text: linkText.substr(1)}];
+	}
+	// If the link has been preceded with a blocked letter then don't treat it as a link
+	if(this.match.index &gt; 0) {
+		var preRegExp = new RegExp($tw.config.textPrimitives.blockPrefixLetters,&quot;mg&quot;);
+		preRegExp.lastIndex = this.match.index-1;
+		var preMatch = preRegExp.exec(this.parser.source);
+		if(preMatch &amp;&amp; preMatch.index === this.match.index-1) {
+			return [{type: &quot;text&quot;, text: linkText}];
+		}
+	}
+        return [{type: &quot;text&quot;, text: linkText}];
+	return [{
+		type: &quot;link&quot;,
+		attributes: {
+			to: {type: &quot;string&quot;, value: linkText}
+		},
+		children: [{
+			type: &quot;text&quot;,
+			text: linkText
+		}]
+	}];
+};
+
+})();
+</pre>
+</div>
 <div created="20200609052339784" modified="20200609052340310" title="$:/DefaultTiddlers">
 <pre>Home</pre>
 </div>
@@ -13836,8 +13915,14 @@ Error message and password prompt
 <div created="20200609053448995" modified="20200609053450287" title="$:/state/plugin-info--896887961-$:/plugins/tiddlywiki/highlight">
 <pre>no</pre>
 </div>
+<div created="20200609112532970" modified="20200609112532970" title="$:/state/plugin-info-334910430-$:/core---1812962263">
+<pre>contents</pre>
+</div>
 <div created="20200609053032193" modified="20200609053036024" title="$:/state/sidebar">
 <pre>yes</pre>
+</div>
+<div created="20200609112525909" modified="20200609112526537" title="$:/state/tab--1498284803">
+<pre>$:/core/ui/AdvancedSearch/System</pre>
 </div>
 <div created="20200609052422844" modified="20200609112125753" title="$:/state/tab--1963855381">
 <pre>$:/core/ui/ControlPanel/Toolbars</pre>
@@ -13863,8 +13948,11 @@ Error message and password prompt
 <div title="$:/status/RequireReloadDueToPluginChange">
 <pre>no</pre>
 </div>
-<div created="20200609111726988" list="$:/config/Search/MinLength $:/ControlPanel Home" modified="20200609111726988" title="$:/StoryList">
+<div created="20200609111726988" list="$:/AdvancedSearch $:/core $:/core/modules/parsers/wikiparser/rules/wikilink.js $:/config/Search/MinLength $:/ControlPanel Home" modified="20200609112559345" title="$:/StoryList">
 <pre></pre>
+</div>
+<div created="20200609112527465" modified="20200609112527465" title="$:/temp/advancedsearch">
+<pre>$:/core/modules/parsers/wikiparser/rules/wikilink.js</pre>
 </div>
 <div created="20200609053033959" modified="20200609053033959" title="$:/temp/HidePluginWarning">
 <pre>yes</pre>
@@ -14876,6 +14964,9 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 </div>
 <div created="20200609052911921" modified="20200609112154364" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre>search</pre>
+</div>
+<div created="20200609112412912" modified="20200609112419505" title="$:/temp/search">
+<pre></pre>
 </div>
 <div created="20200609053443171" modified="20200609053443171" tags="$:/tags/ServerConnection" title="$:/temp/ServerConnection/https://tiddlywiki.com/library/v5.1.22/index.html" url="https://tiddlywiki.com/library/v5.1.22/index.html">
 <pre>loaded</pre>
