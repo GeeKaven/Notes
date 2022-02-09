@@ -1,0 +1,18 @@
+lockfileVersion: 5.3
+
+specifiers:
+  tiddlywiki: ^5.2.1
+
+dependencies:
+  tiddlywiki: registry.npmmirror.com/tiddlywiki/5.2.1
+
+packages:
+
+  registry.npmmirror.com/tiddlywiki/5.2.1:
+    resolution: {integrity: sha512-cfZX8G4/ymQzBmPcI8UWJ317eDrLf4INto99m7M8Nkbx5BMA3+Uapht7OPNaXZRR4RqvVJ7N1Ie1xYMWtvjnpw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/tiddlywiki/-/tiddlywiki-5.2.1.tgz}
+    name: tiddlywiki
+    version: 5.2.1
+    engines: {node: '>=0.8.2'}
+    hasBin: true
+    dev: false
+    bundledDependencies: []

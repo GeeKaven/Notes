@@ -1,0 +1,23 @@
+{
+  "name": "wiki",
+  "version": "1.0.0",
+  "description": "my wiki site",
+  "main": "index.js",
+  "scripts": {
+    "build": "node ./node_modules/tiddlywiki/tiddlywiki.js . --build index",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeeKaven/Wiki.git"
+  },
+  "author": "geekaven",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeeKaven/Wiki/issues"
+  },
+  "homepage": "https://github.com/GeeKaven/Wiki#readme",
+  "dependencies": {
+    "tiddlywiki": "^5.2.1"
+  }
+}
