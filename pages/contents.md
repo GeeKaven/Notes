@@ -1,2 +1,6 @@
 - Tawawa's 的笔记本
 - 这里记录网上的所见所闻
+-
+- Archives
+	- [[Journals]]
+	- [[Reading List]]
