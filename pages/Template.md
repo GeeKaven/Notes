@@ -19,7 +19,7 @@
   template-including-parent:: false
 	- ## Meta
 	  Type:: [/[Project]]
-	  Status:: [[TODO]]
+	  Status:: [/[TODO]]
 	  Title:: 
 	  Link::
 	- ## Content
@@ -30,6 +30,6 @@
   template-including-parent:: false
 	- ## Meta
 	  Type:: [/[Blog]]
-	  Status:: [[TODO]]
+	  Status:: [/[TODO]]
 	  Title:: 
 	  Link::

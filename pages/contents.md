@@ -1,6 +1,18 @@
-- Tawawa's 的笔记本
-- 这里记录网上的所见所闻
+- > 日々私たちが过ごしている日常は、実は、奇迹の连続なのかもしれない      —— 《日常》
 -
-- Archives
+- 欢迎来到我的笔记本👏，我是 Geekaven
+	- 博客 [Tawawa Blog](http://tawawa.moe)
+	- 作品 [Yusha Project](https://yuyuyu.moe)
+	- 代码 [Geekaven's Github](https://github.com/GeeKaven)
+-
+- 这里我的笔记本，记录我的所做，我的所想。
+	- 本站源码 [GeeKaven/Notes](https://github.com/GeeKaven/Notes)
+-
+- My
 	- [[Journals]]
-	- [[Reading List]]
+	- [[Blog List]]
+	- [[Project List]]
+	- [[Reading list]]
+- Note
+	- [[Japanese]]
+- Others
