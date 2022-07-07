@@ -7,10 +7,11 @@
 -
 - 这里我的笔记本，记录我的所做，我的所想。
 	- 本站源码 [GeeKaven/Notes](https://github.com/GeeKaven/Notes)
-	- Code for fun, Code for ACG !
+	- **Code for fun, Code for ACG !**
 -
 - Interesting
 	- [[Japanese]]
+	- [[English]]
 	- [[Game]]
 - Archives
 	- [[Journals]]
