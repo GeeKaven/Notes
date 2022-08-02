@@ -1,0 +1,5 @@
+- 修改 WAN 接口为 PPPoE，光猫不是桥接的话不改
+- 删除 IPV6 [[OpenWrt 禁用 IPv6]]
+- 设置 HelloWorld
+- R2S 有风扇的话设置风扇起停
+- 设置 阿里WebDev
