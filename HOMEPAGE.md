@@ -10,3 +10,7 @@
     * **Code for fun, Code for ACG !**
 
 * Interesting
+    * [自用日语学习方法](Japanese/自用日语学习方法.md)
+
+imgae test
+![avatar](_assets/avatar.jpeg)

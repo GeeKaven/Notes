@@ -3,5 +3,7 @@
   "newFileLocation": "folder",
   "newFileFolderPath": "_inbox",
   "attachmentFolderPath": "_assets",
-  "useTab": false
+  "useTab": false,
+  "useMarkdownLinks": true,
+  "newLinkFormat": "absolute"
 }
