@@ -25,14 +25,26 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "HOMEPAGE.md",
+                "file": "_template/book_template.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "97825d0d868c6a68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "_template/笔记模版.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -98,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "HOMEPAGE.md",
+                "file": "_template/笔记模版.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -115,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "HOMEPAGE.md",
+                "file": "_template/笔记模版.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -138,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "HOMEPAGE.md"
+                "file": "_template/笔记模版.md"
               }
             }
           }
@@ -149,12 +161,13 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "098a83322fa90f9e",
+  "active": "97825d0d868c6a68",
   "lastOpenFiles": [
-    "Japanese/自用日语学习方法.md",
     "HOMEPAGE.md",
+    "Japanese/自用日语学习方法.md",
+    "_template/笔记模版.md",
+    "_template/book_template.md",
     "_assets/avatar.jpeg",
-    "_inbox/test.md",
-    "_template/book_template.md"
+    "_inbox/test.md"
   ]
 }

@@ -1,4 +1,6 @@
 [
   "file-explorer-note-count",
-  "table-editor-obsidian"
+  "table-editor-obsidian",
+  "dataview",
+  "templater-obsidian"
 ]
