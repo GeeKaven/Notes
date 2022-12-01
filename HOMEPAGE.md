@@ -1,5 +1,8 @@
 ---
-title: "HOMEPAGE"
+title: "GeeKaven's Notes"
+date: 2022-12-01 18:59
+lastmod: 2022-12-01 21:38
+tags: []
 ---
 
 > 日々私たちが过ごしている日常は、実は、奇迹の连続なのかもしれない                           —— 《日常》

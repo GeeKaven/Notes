@@ -37,7 +37,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_template/笔记模版.md",
+                "file": "Japanese/自用日语学习方法.md",
                 "mode": "source",
                 "source": false
               }
@@ -110,7 +110,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "_template/笔记模版.md",
+                "file": "Japanese/自用日语学习方法.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +127,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "_template/笔记模版.md",
+                "file": "Japanese/自用日语学习方法.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +150,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "_template/笔记模版.md"
+                "file": "Japanese/自用日语学习方法.md"
               }
             }
           }
@@ -164,9 +164,9 @@
   "active": "97825d0d868c6a68",
   "lastOpenFiles": [
     "HOMEPAGE.md",
-    "Japanese/自用日语学习方法.md",
     "_template/笔记模版.md",
     "_template/book_template.md",
+    "Japanese/自用日语学习方法.md",
     "_assets/avatar.jpeg",
     "_inbox/test.md"
   ]
