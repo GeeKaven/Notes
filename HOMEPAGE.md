@@ -12,5 +12,5 @@
 * Interesting
     * [自用日语学习方法](Japanese/自用日语学习方法.md)
 
-imgae test
+imgae test 测试
 ![avatar](_assets/avatar.jpeg)
