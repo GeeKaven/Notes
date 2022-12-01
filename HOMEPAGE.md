@@ -1,7 +1,7 @@
 ---
 title: "GeeKaven's Notes"
-date: 2022-12-01 18:59
-lastmod: 2022-12-01 21:38
+date: 2022-12-01
+lastmod: 2022-12-01
 tags: []
 ---
 
