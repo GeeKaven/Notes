@@ -20,31 +20,19 @@
             }
           },
           {
-            "id": "098a83322fa90f9e",
+            "id": "4b53cda32c473216",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_template/book_template.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "97825d0d868c6a68",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Japanese/自用日语学习方法.md",
+                "file": "Reading List.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -110,7 +98,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Japanese/自用日语学习方法.md",
+                "file": "Reading List.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -127,7 +115,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Japanese/自用日语学习方法.md",
+                "file": "Reading List.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -150,7 +138,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Japanese/自用日语学习方法.md"
+                "file": "Reading List.md"
               }
             }
           }
@@ -161,12 +149,16 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "97825d0d868c6a68",
+  "active": "4b53cda32c473216",
   "lastOpenFiles": [
     "HOMEPAGE.md",
+    "Reading List.md",
+    "Books/被讨厌的勇气.md",
     "Japanese/自用日语学习方法.md",
+    "_template/书籍模版.md",
     "_template/笔记模版.md",
-    "_template/book_template.md",
+    "_template/项目模版.md",
+    "_inbox/未命名.md",
     "_assets/avatar.jpeg",
     "_inbox/test.md"
   ]
