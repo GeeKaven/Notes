@@ -1,6 +1,5 @@
 .DS_Store
-
-# 不上传pdf,epub,mobi文件
-*.pdf
-*.epub
-*.mobi
+logseq/bak
+logseq/.recycle
+logseq/metadata.edn
+logseq/pages-metadata.edn
